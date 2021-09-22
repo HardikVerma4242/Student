@@ -18,3 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('/student-data', [StudentData::class, 'saveStudentData']);
+Route::post('/login', [StudentData::class, 'login']);

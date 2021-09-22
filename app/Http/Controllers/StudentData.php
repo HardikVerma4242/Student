@@ -13,4 +13,10 @@ class StudentData extends Controller
             return "SuccessFully Create";
         }
     }
+
+    public static function login(Request $request){
+     if($request['email']=='hvhardik0@gmail.com' && $request['password']='Hardik@321'){
+         return view('dashboard');
+     }
+    }
 }
